@@ -1,0 +1,175 @@
+body {
+    direction: rtl;
+    text-align: center;
+    background-color: rgb(255, 200, 135, 0.75);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header {
+    width: 100%;
+    height: 220px;
+    color:white;
+    background-image: url(image/back_header.jpg);
+    background-repeat: initial;
+    background-size: 100% 100%;
+    line-height: 0.8;
+}
+h1{
+    font-size: 36pt;
+}
+h3{
+    font-size: 18pt;
+    line-height: 0.6;
+}
+.bakery_name {
+    height: 88%;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px; 
+    background-color: rgb(58, 48, 47) ;  
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(58, 48, 47);
+    color: white;
+    float: left;
+}
+.content{
+    display: flex;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    top: 360px;
+    width: 85%;
+    height: 100%;
+    background-color: rgb(255, 200, 135);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+.title{
+    font-size: 24px;
+    text-align: center;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 100%;
+    text-align: justify;
+    font-size: 18px;
+    margin: 10px;
+}
+.main h4{
+    font-size: 20px;
+}
+iframe{
+    width: 100% ;
+    height: 270px;
+}
+.product{
+    width: 80%;
+    height: 300px;
+    background-color: rgb(245, 205, 120);
+    text-align: center;
+    margin: 5px;
+    border: 2px solid rgb(70, 30, 28);
+}
+.product img{
+    width: 100%;
+    height: 225px;
+}
+.contact{
+    width: 90%;
+}
+.form{
+    width: 90%;
+    text-align: right;
+}
+a{
+    color: rgb(150, 255, 255);
+    margin: 3px;
+    padding: 3px;
+    font-weight: 400px;
+}
+.connection img{
+    
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 10px;
+    bottom: 25px;
+}
+.recommend{
+    width: 95%;
+    margin: 7px;
+    padding: 7px;
+    background-color: rgb(245, 205, 120);
+    border-radius: 15px;
+}
+@media (min-width:600px) {
+    body {
+        background-color: rgba(55, 145, 80, 0.75);
+    }
+    .content{
+            background-color: rgb(55, 145, 80);
+    }
+    nav{
+        flex-direction: row;
+    }
+    .product{
+        width: 45%;
+    }
+    .recommend{
+        width: 44%;
+    }
+}
+@media (min-width:800px) {
+    .header {
+        height: 300px;
+    }
+    h1{
+        font-size: 50pt;
+    }
+    h3{
+        font-size: 26pt;
+        line-height: 0.6;
+    }
+    body {
+        background-image: url(image/background.jpg);
+        background-attachment: fixed;
+    }
+    .content{
+        background-color: rgb(255, 155, 175);
+    }
+    .product{
+        width: 30%;
+    }
+    .recommend{
+        width: 45%;
+    }
+    .contact{
+        width: 48%;
+    }
+    .form{
+        width: 48%;
+    }
+}
+@media (min-width:1200px) {
+    body {
+        background-image: url(image/background.jpg);
+        background-attachment: fixed;
+    }
+    .content{
+        background-color: rgb(65, 100, 160);
+    }
+    .product{
+        width: 23.5%;
+    }
+    .recommend{
+        width: 47%;
+    }
+}
